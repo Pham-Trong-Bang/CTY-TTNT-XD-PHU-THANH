@@ -1,0 +1,204 @@
+body {
+    margin: 0px;
+    background: #ddd;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/*Style button phone*/
+#hotlineBox {
+    width: 50px;
+    height: 50px;
+    background-color: #e8ff00;
+    position: fixed;
+    bottom: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    display: none;
+    z-index: 2;
+}
+#angleR {
+    width: 33px;
+    height: auto;
+}
+#angleL {
+    width: 33px;
+    height: auto;
+    display: none;
+}
+#phone {
+    width: 33px;
+    height: auto;
+    animation: isFade 0.5s linear;
+    display: none;
+}
+#zalo {
+    width: 33px;
+    height: auto;
+    animation: isFade 0.5s linear;
+    display: none;
+}
+#facebook {
+    width: 33px;
+    animation: isFade 0.5s linear;
+    height: auto;
+    display: none;
+}
+
+@keyframes isFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes rotateOut {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotateIn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+
+
+
+
+#header {
+    width: calc(100% - 40px);
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.logoHeader {
+    height: 45px;
+    width: auto;
+    user-select: none;
+}
+.fa-bars {
+    color: #e8ff00;
+    font-size: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+.fa-bars:hover {
+    opacity: 0.8;
+}
+
+/*Style Banner in more sreen*/
+
+#Banner {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+#container {
+    width: 1300px;
+    background-color: white;
+    margin: 80px auto 0px auto;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.Intro {
+    width: 99%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px 0px;
+    margin: 0px auto;
+}
+.Intro h2 {
+    width: calc(100% - 30px);
+    padding: 0px 15px 15px;
+    border-bottom: 1px solid black;
+}
+.text {
+    padding: 0px 15px;
+    margin: 15px auto;
+    text-indent: 20px;
+}
+#Product {
+    width: 99%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px 0px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+#Product h2 {
+    width: calc(100% - 30px);
+    padding: 0px 15px 15px;
+    border-bottom: 1px solid black;
+    margin-bottom: 0px;
+}
+.boxItems {
+    width: 365px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+.boxItems img {
+    height: 180px;
+    width: auto;
+    border-radius: 5px;
+    padding-left: 7%;
+} 
+#list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.textInIT {
+    height: 180px;
+    width: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.textInIT p {
+    margin: 5px 0px;
+    text-align: right;
+}
+#gocXinfa {
+    margin-left: -10%;
+}
+#bestSeller {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    bottom: -15px;
+    left: -20px;
+}
